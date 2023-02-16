@@ -1,0 +1,18 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main()
+{
+    ofstream filestream("text.cpp");
+    if (filestream.is_open())
+    {
+        filestream << "MY name is Yaman Raj Singh\n";
+        filestream << "uhbchdbucbhdb hbhbx\n";
+        filestream.close();
+    }
+    else
+    {
+        cout << "file opening is fail\n";
+    }
+    return 0;
+}
